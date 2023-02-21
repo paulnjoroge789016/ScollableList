@@ -16,10 +16,8 @@ import com.example.scrollablelist.ui.theme.ScrollableListTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Log.d("Paul", "onCreate: Executed correctly")
         setContent {
             ScrollableListTheme {
-                Log.d("Paul", "onCreate: Theme functions correctly")
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
@@ -34,11 +32,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String) {
-    Log.d("Paul", "Greeting:OnStart of greeting function ")
     Text(text = "Hello $name!")
-    TODO("Write tests")
-    Log.d("Paul", "Greeting:End of greeting function ")
-
 }
 
 @Preview(showBackground = true)
